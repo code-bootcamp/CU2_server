@@ -14,9 +14,9 @@ export class Follow {
   @Field(() => User)
   fromUserId: User;
 
-  @ManyToOne(() => User)
-  @Field(() => User)
-  toUserId: User;
+  @Column()
+  @Field(() => String)
+  toUserId: string;
 
   //설정값? relate?
 }
